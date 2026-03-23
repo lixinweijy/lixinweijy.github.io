@@ -32,20 +32,118 @@
             <a href="https://lixinweijy.github.io/"><img src="photos/me.jpg" alt="alt text" width="134px" height="189px" /></a>&nbsp;
           </td>
           <td align="left"><p>
-            长江大学&nbsp&nbsp&nbsp&nbsp2021.9&nbsp--<br/>
+            长江大学&nbsp&nbsp&nbsp&nbsp2021.9&nbsp--2025.6<br/>
             计算机科学学院 <br />
             计算机科学与技术<br/>
             湖北 荆州<br />
             E-mail: <a href="lixinweijy@gmail.com">lixinweijy@gmail.com<br /></a></p>
-            [Last Update]： 2025.4.6 <br />
+            [Last Update]： 2026.3.23 <br />
           </td>
         </tr>
       </table>
-      <h2>自我评价</h2>
-        <li>参与嵌入式软件开发实习以及机器人、智能汽车开发项目，具备嵌入式系统设计能力，熟悉嵌入式系统开发流程和硬件接口调试，熟悉多种开发工具和语言。</li>
-        <li>善于沟通与执行，具有良好的协作能力，时间意识强，细致敬业，责任心强，学习能力和适应能力强，承压能力强。</li>
+      <h1>工作经历</h1>
+        <ol>
+          <li><p><b>厦门雅迅智联科技股份有限公司 | 嵌入式linux软件工程师&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2025.07-至今</b></p></li>
+            <ul>
+              <li><p>负责车载行驶记录仪通信模块开发与维护，编写路由管理进程，实现记录仪系统与移远蜂窝模块（EC200A/EC20）之间的通信封装</p></li>
+              <li><p>参与国标GB19056行驶记录仪相关业务开发与问题排查，解决实车测试中的系统稳定性问题</p></li>
+              <li><p>参与TBOX Linux4.0新架构开发，完成通信模块、模拟模块以及测试模块实现</p></li>
+            </ul>
+        </ol>
+      <h1>核心项目</h1>
+        <ol>
+          <li>
+            <p><b>行驶记录仪通信与网络管理进程开发 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025.08-2025.12</b></p>
+            <ul>
+              <li><b>项目描述：</b>基于RV1126B平台开发车载行驶记录仪通信系统，实现蜂窝网络拨号、短信、电话、TTS、OTA升级等功能，并支持多APN及远程升级能力。</li>
+              <li><b>主要工作：</b>
+                <ul>
+                  <li>负责路由进程开发，实现与移远模组（EC200A/EC20）的AT指令交互与通信状态管理</li>
+                  <li>完成拨号上网、短信、语音通话等通信能力</li>
+                  <li>参与RIL架构分析，梳理RIL Server启动流程与配置机制</li>
+                  <li>开发多APN网络管理模块，实现统一通信接口</li>
+                  <li>通过消息队列替换信号机制，提升系统稳定性</li>
+                  <li>实现模组远程升级（FTP/HTTP/U盘）并完成测试</li>
+                  <li>参与实车调试，解决语音/TTS冲突及通信异常问题</li>
+                </ul>
+              </li>
+              <li><b>项目成果：</b>
+                <ul>
+                  <li>完成通信管理模块开发，实现稳定蜂窝通信</li>
+                  <li>支持多APN接入，增强网络适配能力</li>
+                  <li>实现远程升级能力，提升维护效率</li>
+                  <li>优化通信架构，提升系统稳定性并支持量产</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Tbox新架构——linux4.0架构搭建 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025.12-至今</b></p>
+            <ul>
+              <li><b>项目描述：</b>参与公司新一代TBOX Linux4.0架构搭建，替换旧版TBOX3.0系统架构，采用多进程通信架构实现通信模块与业务模块解耦，提高系统扩展性与稳定性。</li>
+              <li><b>本人工作：</b>
+                <ul>
+                  <li>负责RIL进程架构设计与实现，实现与模块交互驱动开发</li>
+                  <li>编写GPRS、GSM通信模块，实现网络、多APN管理及信号查询接口</li>
+                  <li>实现SMS收发模块</li>
+                  <li>搭建Linux4.0集成测试环境，开发测试进程与自动化测试脚本</li>
+                  <li>实现GPS / AT / MCU串口数据模拟工具，支持自动化测试</li>
+                </ul>
+              </li>
+              <li><b>项目成果：</b>
+                <ul>
+                  <li>完成Linux4.0通信模块基础架构搭建</li>
+                  <li>实现通信模块自动化测试能力</li>
+                  <li>显著提升系统调试与测试效率</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><b>嵌入式Linux内核与U-Boot移植（RV1126B平台） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025.07-2025.10</b></p>
+            <ul>
+              <li><b>项目描述：</b>基于RV1126B平台完成嵌入式Linux系统移植，打通Bootloader（U-Boot）到内核启动全流程，完成设备树适配及关键外设驱动使能，实现系统稳定启动与外设正常工作。</li>
 
-      <h2>项目经历</h2>
+              <li><b>本人工作：</b>
+                <ul>
+                  <li>完成U-Boot移植与适配，修改板级初始化代码（board文件），实现DDR初始化及串口调试输出</li>
+                  <li>梳理Boot启动流程（ROM → U-Boot → Kernel），定位启动卡死问题并完成问题修复</li>
+                  <li>完成Linux内核裁剪与配置（menuconfig），使能串口、I2C、SPI、MMC等核心外设驱动</li>
+                  <li>基于设备树（Device Tree）完成硬件描述，适配GPIO、UART、I2C等外设节点</li>
+                  <li>移植RootFS（busybox），构建最小Linux系统并完成挂载与启动</li>
+                  <li>调试启动日志（early printk / dmesg），定位内核启动异常问题</li>
+                  <li>完成常用外设驱动验证（串口通信、存储设备识别、I2C设备通信等）</li>
+                </ul>
+              </li>
+
+              <li><b>项目成果：</b>
+                <ul>
+                  <li>完成从上电到Linux Shell的完整启动链路打通</li>
+                  <li>实现多外设正常驱动与系统稳定运行</li>
+                  <li>具备独立分析与解决Boot阶段问题的能力</li>
+                  <li>积累完整BSP开发经验（Bootloader + Kernel + RootFS）</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      <h1>专业技能</h1>
+        <ul>
+          <li><p><b>软件能力：</b>熟练掌握C(符合MISRA-C规范)/CPP，python，x86汇编语言和相关技术，擅长内存与性能优化、代码重构与稳定性问题处理。</p></li>
+          <li><p><b>工具掌握：</b>熟悉git，github，vscode，claude cli，gdb，qemu等工具的使用。</p></li>
+          <li><p><b>嵌入式与单片机：</b>熟练掌握stm32，树莓派等单片机和SOC的使用；熟悉Linux操作系统；熟悉ROS机器人操作系统以及slam建图算法，teb、dwa导航算法；
+            熟练掌握freertos使用以及了解其内核源码；熟悉I2C、SPI、UART、Platform等外设驱动开发，熟悉Device、Driver、Bus和Class设备模型。</p></li>
+        </ul>
+
+      <h1>自我评价</h1>
+        <ul>
+          <li>参与嵌入式软件开发实习以及机器人、智能汽车开发项目，具备嵌入式系统设计能力，熟悉嵌入式系统开发流程和硬件接口调试，熟悉多种开发工具和语言。</li>
+          <li>善于沟通与执行，具有良好的协作能力，时间意识强，细致敬业，责任心强，学习能力和适应能力强，承压能力强。</li>
+          <li>对新技术有强烈的学习兴趣，能够快速掌握并应用于实际项目中。</li>
+        </ul>
+
+      <h1>校园生活</h1>
+      <h2>校园项目经历</h2>
         <ol>
           <li><p><b>智能垃圾分类系统&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp核心成员</b></p></li>
             <ul>
@@ -88,14 +186,6 @@
               <li><p>睿抗机器人开发中大赛——任务应用大赛&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp国家二等奖</p></li> 
               <li><p>人工智能开发者证书(HCCDA – AI)</p></li> 
         </ul>
-
-      <h2>专业技能</h2>
-        <ul>
-          <li><p><b>软件能力：</b>熟练掌握C/CPP，python语言和相关技术；掌握鸿蒙应用开发。熟悉Opencv和Pytorch深度学习框架。</p></li>
-          <li><p><b>工具掌握：</b>熟悉git，github，vscode，solidworks等工具的使用。</p></li>
-          <li><p><b>嵌入式与单片机：</b>熟练掌握stm32，51，gd32，arduino，树莓派等单片机和SOC的使用；熟悉Linux操作系统；熟悉ROS机器人操作系统以及slam算法，包括激光雷达的 2d/3d 建图，amcl定位，导航及避障算法。；熟练掌握freertos使用以及了解其内核源码。</p></li>
-        </ul>
-
       <h2>实践经历</h2>
         <ol>
           <li><p><b>广东辰奕智能科技股份有限公司 | 嵌入式软件工程师&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.06-2022.08</b></p></li>
